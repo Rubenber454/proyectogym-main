@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon (5).ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>TorettoGym</title>
+</head>
+<body>
+<header>
+    
+    <nav class="navbar" id="myNavbar">
+        <a href="#services">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#precios">Tarifas</a>
+        <a href="#contact">Contacto</a>
+        <a href="#" disabled class="icon" id="boton" >&#9776;</a>
+    </nav>
+    <div class="container">
+        <div class="texto">
+            <h1>TorettoGym</h1>
+            <p>Fuerza, Velocidad, Familia</p>
+        </div>
+        <img class="imgCabecera" src="img/en-cuanto-tiempo-se-nota-el-gimnasio-1.png" alt="gym">
+    </div>
+</header>
+
+    <div class="hero">
+        <section id="nosotros" class="section">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                TorettoGym es más que un gimnasio; es un santuario para quienes buscan superar sus límites, con instalaciones de última generación, entrenadores apasionados y una comunidad comprometida que te inspira a alcanzar tus metas, ya sea que estés comenzando tu viaje fitness o buscando llevar tu entrenamiento al siguiente nivel.
+                En TorettoGym creemos en la importancia de la familia, la fuerza y la velocidad. Nuestros entrenadores están dedicados a ayudarte a alcanzar tus metas, ya sea que estés empezando o que seas un atleta experimentado. Únete a nuestra comunidad y forma parte de la familia Toretto.
+            
+            </p>
+        </section>
+    </div>
+
+    <div class="servicios">
+        <section id="services" class="section">
+            <h2>Nuestros Servicios</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="img/Peso libre.jpg" alt="fuerza">
+                    <h3>Entrenamiento de Fuerza</h3>
+                    <p>Desarrolla tu fuerza con nuestros programas personalizados.</p>
+                </div>
+                <div class="service">
+                    <img src="img/Bicicleta estática.jpg" alt="velocidad">
+                    <h3>Entrenamiento de Velocidad</h3>
+                    <p>Mejora tu agilidad y rapidez con nuestros entrenadores expertos.</p>
+                </div>
+                <div class="service">
+                    <img src="img/Actividades dirigidas.jpg" alt="clases">
+                    <h3>Clases Grupales</h3>
+                    <p>Únete a nuestras clases grupales y entrena con la familia.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="pricing-section">
+            <h2>Nuestras Tarifas</h2>
+            <div  id="precios" class="pricing-table">
+                <div class="plan">
+                    <h3>Mensual</h3>
+                    <p>Acceso completo al gimnasio</p>
+                    <div class="price">30€/mes</div>
+                    <button onclick="addToCart('Mensual', 30)">Elegir Plan</button>
+                </div>
+                <div class="plan">
+                    <h3>Anual</h3>
+                    <p>Ahorra con el plan anual</p>
+                    <div class="price">300€/año</div>
+                    <button onclick="addToCart('Anual', 300)">Elegir Plan</button>
+                </div>
+                <div class="plan">
+                    <h3>Dia completo</h3>
+                    <p>Acceso solo un día</p>
+                    <div class="price">5€/día</div>
+                    <button onclick="addToCart('Solo día', 5)">Elegir Plan</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-section">
+            <h2>Carrito de Compras</h2>
+            <ul class="cart-items" id="cart-items">
+                <!-- Items del carrito aparecerán aquí -->
+            </ul>
+            <div class="cart-total" id="cart-total">Total: 0€</div>
+            <a href="#" class="checkout-btn">Proceder al Pago</a>
+        </div>
+
+        <section id="contact" class="section">
+            <h2>Contáctanos</h2>
+            <div class="contact">
+                <div class="contact-info">
+                    <h3>Dirección</h3>
+                    <p>Polígono de Juncaril, nave 2, Albolote,Granada</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Teléfono</h3>
+                    <p>(+34) 659 523 214 </p>
+                </div>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>contacto@torettogym.com</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="formulario">
+    <form id="contactForm">
+        <h2>Te contactamos nosotros</h2>
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="email" id="email" placeholder="Correo Electrónico">
+        <input type="tel" id="telefono" placeholder="Teléfono">
+    <div class="centerbtn">
+        <button class="btnFormu"type="submit">Enviar</button>
+    </div>
+        <p id="formMessage"></p>
+    
+    </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 TorettoGym. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+<script src="js/carrito.js"></script>
+<script src="js/formulario.js"></script>
+<script src="js/navResponsive.js"></script>
+</body>
+</html>
